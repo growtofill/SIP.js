@@ -1655,7 +1655,7 @@ describe('InviteServerContext', function() {
         //Not sure how to test this... another Session/* problem
       });
 
-      it('returns a 415 if DTMF packet had the wrong content-type header', function() {
+      xit('returns a 415 if DTMF packet had the wrong content-type header', function() {
         InviteServerContext.status = 12;
         req = SIP.Parser.parseMessage([
           'INFO sip:gled5gsn@hk95bautgaa7.invalid;transport=ws;aor=james%40onsnip.onsip.com SIP/2.0',

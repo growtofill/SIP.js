@@ -165,8 +165,6 @@ DTMF.prototype.init_incoming = function(request) {
   this.direction = 'incoming';
   this.request = request;
 
-  request.reply(200);
-
   if (!this.tone || !this.duration) {
     this.logger.warn('invalid INFO DTMF received, discarded');
   } else {
